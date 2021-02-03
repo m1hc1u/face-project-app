@@ -1,15 +1,12 @@
-import { ReactComponent as FaceLogo } from '../img/face-logo.svg';
+import React from 'react';
+import FaceLogo from '../img/face-logo.svg';
 
 const Header = () => {
     return (
         <header className='page-header'>
             <div className='header-full-menu'>
                 <a href="/public/index.html">
-                    <img className="face-logo">
-                        { FaceLogo }
-                        <FaceLogo />
-                    </img>
-                    {/*<img className='face-logo' src="" alt='facé profile' />*/}
+                    <img className='face-logo' src={FaceLogo} alt='facé profile' />
                 </a>
                 <div className="logo">
                     <a href="/public/index.html">
