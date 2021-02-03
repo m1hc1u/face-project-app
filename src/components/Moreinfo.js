@@ -1,4 +1,6 @@
 // import ScrollDown from 'ScrollDown';
+import React from 'react';
+import ManyFaces from '../img/smiling-faces-happy-group.jpg';
 
 const Moreinfo = () => {
     return (
@@ -13,7 +15,7 @@ const Moreinfo = () => {
                     </button>
                 </div>
                 {/*// <!-- przewijanie w prawo automatycznie -->*/}
-                <img src="/src/img/smiling-faces-happy-group.jpg" alt="faces"
+                <img src={ManyFaces} alt="faces"
                      className="many-faces" id="many-faces" />
             </div>
         </section>
