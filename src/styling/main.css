@@ -64,9 +64,8 @@ header {
 }
 
 .header-full-menu {
-  margin: 0 auto;
-  padding: 5px;
-  width: max-content;
+  padding: 8px 0;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -81,7 +80,8 @@ header {
   display: block;
   width: 50px;
   height: 72px;
-  margin: 0;
+  margin: 2px;
+  padding: 2px;
 }
 
 .face-logo:hover {
@@ -90,10 +90,9 @@ header {
 }
 
 .logo {
-  display: block;
-  /*position: fixed;*/
-  width: 100px;
-  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Dancing Script', cursive;
   font-weight: bolder;
 }
@@ -101,7 +100,7 @@ header {
 .logo-text {
   display: flex;
   text-align: center;
-  margin-left: -150px;
+  padding: 5px;
 }
 
 .navi {
@@ -135,7 +134,7 @@ a:hover {
 /* Sekcja zachęcająca do dalszego info */
 
 .container {
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
   justify-content: center;
   align-items: center;

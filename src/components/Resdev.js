@@ -1,3 +1,6 @@
+import WomanFace1 from '../img/woman-face.png';
+import WomanFace2 from '../img/woman-face-2.png';
+
 const Resdev = () => {
     return (
         <section className="container-rd" id="container-rd">
@@ -13,12 +16,12 @@ const Resdev = () => {
                         </ul>
                     </div>
                     <div className="rd-now--img-container">
-                        <img className="white-woman" src="/src/img/woman-face.png" alt="blonde woman's face" />
+                        <img className="white-woman" src={WomanFace1} alt="blonde woman's face" />
                     </div>
                 </div>
                 <div className="rd-future">
                     <div className="rd-future--img-container">
-                        <img className="asian-woman" src="/src/img/woman-face-2.png" alt="asian woman's face" />
+                        <img className="asian-woman" src={WomanFace2} alt="asian woman's face" />
                     </div>
                     <div className="rd-future--text-container">
                         <h3 className="rd-future--h3-text">Future potential</h3>
