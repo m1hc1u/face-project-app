@@ -10,12 +10,12 @@ import Footer from "./components/Footer";
 function Main() {
   return (
     <div className="container">
-    <Preheader />
-    <Header />
-    <Moreinfo />
-    <Resdev />
-    <Feedback />
-    <Footer />
+      <Preheader />
+      <Header />
+      <Moreinfo />
+      <Resdev />
+      <Feedback />
+      <Footer />
     </div>
   );
 }
