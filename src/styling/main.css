@@ -71,6 +71,10 @@ header {
   justify-content: space-between;
 }
 
+.logos-left {
+  display: flex;
+}
+
 .logo a {
   text-decoration: none;
   color: var(--main-font-color);
@@ -91,7 +95,6 @@ header {
 
 .logo {
   display: flex;
-  justify-content: center;
   align-items: center;
   font-family: 'Dancing Script', cursive;
   font-weight: bolder;
@@ -101,15 +104,19 @@ header {
   display: flex;
   text-align: center;
   padding: 5px;
+  margin-left: 10px;
 }
 
 .navi {
   display: flex;
   list-style: none;
+  text-align: center;
+  padding: 5px;
+  margin-left: 10px;
 }
 
 .navi li {
-  margin: 20px;
+  margin: 10px;
 }
 
 .navi a {
