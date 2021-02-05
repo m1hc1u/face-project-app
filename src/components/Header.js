@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { forwardRef, useRef} from 'react';
 import FaceLogo from '../img/face-logo.svg';
 
 const Header = () => {
+
     return (
         <header className='page-header'>
             <div className='header-full-menu'>
@@ -17,7 +18,7 @@ const Header = () => {
                 </div>
                 <nav>
                     <ul className="navi">
-                        <li className="navi-li"><a href="#">&nbsp;App&nbsp;</a></li>
+                        <li className="navi-li"><a href={FaceApp}>&nbsp;App&nbsp;</a></li>
                         <li className="navi-li"><a href="#"> &nbsp;R&D&nbsp;</a></li>
                         <li className="navi-li"><a href="#">&nbsp;Feedback&nbsp;</a></li>
                     </ul>
@@ -25,6 +26,15 @@ const Header = () => {
             </div>
         </header>
     );
+}
+
+const ResDev = () => {
+    const resdevRef = useRef()
+
+    function handleScrollClick() {
+        resdevRef.current.scrollIntoView({ behavior: 'smooth'})
+    }
+    return
 }
 
 export default Header;
