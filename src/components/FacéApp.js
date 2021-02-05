@@ -10,3 +10,14 @@
 //         console.log(photos)
 //     });
 
+import React from 'react';
+import Header from "./Header";
+
+const FacéApp = () => {
+    return (
+        <Header />
+    //    tu właściwa apka i jej treść
+    )
+}
+
+export default FacéApp;
