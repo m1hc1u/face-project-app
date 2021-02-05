@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import ManyFaces from '../img/smiling-faces-happy-group.jpg';
 
-const Moreinfo = () => {
+const MoreInfo = () => {
     const imageRef = useRef();
 
     function handleButtonClick () {
@@ -18,7 +18,7 @@ const Moreinfo = () => {
                         Find out more
                     </button>
                 </div>
-                {/*// <!-- przewijanie w prawo automatycznie -->*/}
+                
                 <img ref={imageRef} src={ManyFaces} alt="faces"
                      className="many-faces" id="many-faces" />
             </div>
@@ -26,4 +26,4 @@ const Moreinfo = () => {
     );
 }
 
-export default Moreinfo;
+export default MoreInfo;
