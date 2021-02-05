@@ -1,22 +1,27 @@
 import React from 'react';
+import RegistrationForm from './components/RegistrationForm';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Preheader from './components/Preheader';
-import Header from "./components/Header";
-import Moreinfo from "./components/Moreinfo";
-import Resdev from "./components/Resdev";
-import Feedback from "./components/Feedback";
-import Footer from "./components/Footer";
-// import Images from "./components/Images";
+import Home from './components/Home';
 
 function Main() {
   return (
-    <div className="container">
-      <Preheader />
-      <Header />
-      <Moreinfo />
-      <Resdev />
-      <Feedback />
-      <Footer />
-    </div>
+      <Router>
+        <div className="">
+            <Preheader />
+                <div className="container d-flex align-items-center flex-column">
+                    <Switch>
+                        <Route path="/reg" exact={true}>
+                            <RegistrationForm />
+                        </Route>
+                        <Route path="/" exact={true}>
+                            <Home />
+                        </Route>
+                    </Switch>
+                </div>
+
+        </div>
+      </Router>
   );
 }
 
