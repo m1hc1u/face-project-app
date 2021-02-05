@@ -201,8 +201,10 @@ a:hover {
   transition-duration: .3s;
 }
 
-.happy-faces {
+.many-faces {
   max-width: 100%;
+  display: inline-block;
+  justify-items: center;
 }
 
 /* r&d */
@@ -386,3 +388,6 @@ a:hover {
   padding: 5px;
   margin: 5px;
 }
+
+/* register form */
+
