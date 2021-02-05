@@ -1,7 +1,7 @@
 import WomanFace1 from '../img/woman-face.png';
 import WomanFace2 from '../img/woman-face-2.png';
 
-const Resdev = () => {
+const ResDev = () => {
     return (
         <section className="container-rd" id="container-rd">
             <div className="rd-now-future">
@@ -37,4 +37,4 @@ const Resdev = () => {
     );
 }
 
-export default Resdev;
+export default ResDev;
