@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styling/main.css';
+import './styling/style.scss';
+import './styling/variables.scss';
+import './styling/normalize.css';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';
 
