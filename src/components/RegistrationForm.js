@@ -17,7 +17,7 @@ function RegistrationForm(props) {
     const handleSubmitClick = (e) => {
         e.preventDefault();
         if (state.password === state.confirmPassword) {
-            sendDetailsToServer();
+            // sendDetailsToServer();
         } else {
             props.showError('Passwords do not match');
         }
@@ -69,3 +69,5 @@ function RegistrationForm(props) {
 }
 
 export default RegistrationForm;
+
+//
