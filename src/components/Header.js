@@ -1,6 +1,6 @@
 import React, { forwardRef, useRef} from 'react';
 import FaceLogo from '../img/face-logo.svg';
-import FacéApp from '/src/components/FacéApp';
+import {NavLink} from 'react-router-dom';
 
 const Header = () => {
 
@@ -19,8 +19,8 @@ const Header = () => {
                 </div>
                 <nav>
                     <ul className="navi">
-                        <li className="navi-li"><a onClick={FacéApp}>&nbsp;App&nbsp;</a></li>
-                        <li className="navi-li"><a href="#"> &nbsp;R&D&nbsp;</a></li>
+                        <li className="navi-li"><NavLink to="/random-face">&nbsp;App&nbsp;</NavLink></li>
+                        <li className="navi-li"><a href="#container-rd"> &nbsp;R&D&nbsp;</a></li>
                         <li className="navi-li"><a href="#">&nbsp;Feedback&nbsp;</a></li>
                     </ul>
                 </nav>
