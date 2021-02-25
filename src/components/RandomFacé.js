@@ -1,15 +1,18 @@
 import React from 'react';
 import {useState} from "react";
 
-//prosimy uzytkowanika o opcje
+//prosimy użytkownika o opcje
 
 const RandomFacé = () => {
     const [face, setFace] = useState('');
-    const [eye, setEye] = useState('');
+    const [gender, setGender] = useState('');
+    const [age, setAge] = useState('');
+    const [hairLength, setHairLength] = useState('');
+
     const generateFace = () => {
         let url = `https://api.generated.photos/api/v1/faces?per_page=1`;
-        if(eye) {
-            url += `?eye_color=${eye}`
+        if(gender) {
+            url += `?gender=${gender}`
         }
         fetch(url, {
             headers: {
@@ -25,11 +28,27 @@ const RandomFacé = () => {
     }
     return (
        <div>
-           <form>
-               eye, hair
+           <form method="post" action="">
+               <select name="gender" required>
+                   <option value="male">Male</option>
+                   <option value="female">Female</option>
+               </select>
+               <select name="age" required>
+                   <option value="infant">Infant</option>
+                   <option value="child">Child</option>
+                   <option value="young-adult">Young-adult</option>
+                   <option value="adult">Adult</option>
+                   <option value="elderly">Elderly</option>
+               </select>
+               <select name="hair_length" required>
+                   <option value="short">Short</option>
+                   <option value="medium">Medium</option>
+                   <option value="long">Long</option>
+               </select>
+               <input type="submit" value="submit" />
            </form>
            <button onClick={() => generateFace()}>Generate Facé</button>
-           {!face ? <p>loading</p> : <img src={face}/>}
+           {!face ? <p>Loading...</p> : <img src={face}/>}
        </div>
     )
 }
