@@ -8,20 +8,22 @@ const Header = () => {
         <header className='page-header'>
             <div className='header-full-menu'>
                 <div className='logos-left'>
-                <a href="/public/index.html">
-                    <img className='face-logo' src={FaceLogo} alt='facé profile' />
-                </a>
-                <div className="logo">
                     <a href="/public/index.html">
-                        <h1 className="logo-text">Facé</h1>
+                        <NavLink to='/'>
+                            <img className='face-logo' src={FaceLogo} alt='facé profile' />
+                        </NavLink>
                     </a>
-                </div>
+                    <div className="logo">
+                        <NavLink to='/'>
+                            <h1 className="logo-text">Facé</h1>
+                        </NavLink>
+                    </div>
                 </div>
                 <nav>
                     <ul className="navi">
                         <li className="navi-li"><NavLink to="/random-face">&nbsp;App&nbsp;</NavLink></li>
                         <li className="navi-li"><a href="#container-rd"> &nbsp;R&D&nbsp;</a></li>
-                        <li className="navi-li"><a href="#">&nbsp;Feedback&nbsp;</a></li>
+                        <li className="navi-li"><a href="#container-contact-feedback">&nbsp;Feedback&nbsp;</a></li>
                     </ul>
                 </nav>
             </div>
