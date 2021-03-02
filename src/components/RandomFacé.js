@@ -1,7 +1,6 @@
 import React from 'react';
 import {useState} from "react";
-
-//prosimy użytkownika o opcje
+import {isEmpty} from "lodash/lang";
 
 const RandomFacé = () => {
     const [face, setFace] = useState('');
@@ -30,7 +29,7 @@ const RandomFacé = () => {
             .then(res => res.json())
             .then(photos => {
                 console.log(photos);
-                if(photos.length) {
+                if(!isEmpty(photos)) {
                     setFace(photos.faces[0].urls[4]['512'])
                 }
             })
