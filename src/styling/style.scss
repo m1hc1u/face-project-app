@@ -1,7 +1,9 @@
 @import "./variables";
+
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: $bg;
@@ -322,4 +324,41 @@ a {
   height: 35px;
   padding: 5px;
   margin: 5px;
+}
+
+.face-app-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+  .face-app-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .face-app-select-gender {
+      margin: 15px;
+      padding: 5px;
+    }
+    .face-app-select-name {
+      margin: 15px;
+      padding: 5px;
+    }
+    .face-app-select-hair-length {
+      margin: 15px;
+      padding: 5px;
+    }
+    .face-app-button {
+      border-radius: 20px;
+      background-color: white;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      color: $main-font-color;
+      display: inline-block;
+      padding: 5px 20px;
+      margin: 15px;
+    }
+  }
 }
