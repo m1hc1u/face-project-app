@@ -23,7 +23,7 @@ const RandomFacé = () => {
 
         fetch(url, {
             headers: {
-                Authorization: 'API-Key GkWzZRe_DY7PteRqi_cyfA'
+                Authorization: 'API-Key lBDZSzQSGgOAv0dqMaBTkg'
             }
         })
             .then(res => res.json())
@@ -35,14 +35,14 @@ const RandomFacé = () => {
             })
     }
     return (
-       <div>
-           <form method="post" action="" onSubmit={generateFace}>
-               <select name="gender" value={gender} onChange={(e) => setGender(e.target.value)} required>
+       <div className="face-app-div">
+           <form className="face-app-form" method="post" action="" onSubmit={generateFace}>
+               <select className="face-app-select-gender" name="gender" value={gender} onChange={(e) => setGender(e.target.value)} required>
                    <option value="">Gender</option>
                    <option value="male">Male</option>
                    <option value="female">Female</option>
                </select>
-               <select name="age" value={age} onChange={(e) => setAge(e.target.value)} required>
+               <select className="face-app-select-name" name="age" value={age} onChange={(e) => setAge(e.target.value)} required>
                    <option value="">Age</option>
                    <option value="infant">Infant</option>
                    <option value="child">Child</option>
@@ -50,15 +50,17 @@ const RandomFacé = () => {
                    <option value="adult">Adult</option>
                    <option value="elderly">Elderly</option>
                </select>
-               <select name="hair_length" value={hairLength} onChange={(e) => setHairLength(e.target.value)}  required>
+               <select className="face-app-select-hair-length" name="hair_length" value={hairLength} onChange={(e) => setHairLength(e.target.value)}  required>
                    <option value="">Hair length</option>
                    <option value="short">Short</option>
                    <option value="medium">Medium</option>
                    <option value="long">Long</option>
                </select>
-               <button type='submit'>Generate Facé</button>
+               <button className="face-app-button" type='submit'>Generate Facé</button>
            </form>
-           {!face ? <p>Loading...</p> : <img src={face}/>}
+           <div className="face-app-face">
+           {face ? <img src={face}/> : <p> . </p>}
+           </div>
        </div>
     )
 }
